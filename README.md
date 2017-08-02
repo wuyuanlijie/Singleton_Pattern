@@ -2,7 +2,7 @@
 
 
 ## 前言
-作为一个单身很久的boy，接触JavaScript的时候，就深深被单例模式所吸引，我只想要个女朋友，不要多，只要一个...如果可能的话，我希望是她，哈哈哈！
+作为一个单身很久的boy，接触JavaScript的时候，就深深被单例模式所吸引，我只想要个女朋友，不要多，只要一个...如果可能的话，我希望是她:heart_eyes:，哈哈哈！
 
 ![](http://wx4.sinaimg.cn/bmiddle/006z0VkIly1fi4oe4215qj30ku0kumze.jpg)
 
@@ -21,9 +21,10 @@ var Singleton = function(name) {
 var a = new Singleton('赵丽颖');
 console.log(a.name);  //赵丽颖
 ```
-但是你考虑过没，我们**颖宝**只有一个啊，你不可能在去找到第二个！！！
+但是你考虑过没，我们**颖宝**只有一个啊，你不可能在去找到第二个:broken_heart:！！！
 ```javascript
 var b = new Singleton('我也是赵丽颖');
+console.log(b.name);  //我也是赵丽颖
 ```
 像这种情况，作为*颖火虫*是觉得不允许的，我们就需要一种新的模式来构建对象。<br>
 ### 2. 这个时候单例模式来了——ES5 
@@ -41,7 +42,7 @@ Singleton.getInstance = function(name) {
   return this.instance;
 }
 ```
-这个时候我们就需要用getInstance方法去创建对象，你会发现无论你再怎么去构建新的对象，就只有一个丽颖了！
+这个时候我们就需要用getInstance方法去创建对象，你会发现无论你再怎么去构建新的对象，就只有一个丽颖了！:sunglasses:
 ```javascript
 var a = Singleton.getInstance('赵丽颖');
 var b = Singleton.getInstance('我也是赵丽颖');
@@ -78,12 +79,14 @@ class中用static声明的是静态属性，可想而知，它是一个内部属
 
 ### 4. 用闭包来实现单例模式
 实现单例模式的方法有很多种，闭包也是其中一种! 首先我们先了解下它们：<br>
-**[闭包的原理](http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)**： **当函数可以记住并访问所在的词法作用域，即是函数是在当前词法作用域之外执行，这时就产生了闭包**！<br>
-> 简单的说，说是函数嵌套在函数里面，并且里面的函数能够持续访问到外面的函数的变量，导致变量不会被销毁，而一直被引用<br><br>
+**[闭包的原理](http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)**： **当函数可以记住并访问所在的词法作用域，即是函数是在当前词法作用域之外执行，这时就产生了闭包**！
 
-**[立即执行函数IIFE](http://blog.csdn.net/qq838419230/article/details/8030078)**: **它可以让你的函数在定义后立即被执行**。 <br>
+> 简单的说，说是函数嵌套在函数里面，并且里面的函数能够持续访问到外面的函数的变量，导致变量不会被销毁，而一直被引用
+
+**[立即执行函数IIFE](http://blog.csdn.net/qq838419230/article/details/8030078)**: **它可以让你的函数在定义后立即被执行**。 
 
 > 它有一个优点就是能够为你的初始化代码提供一个作用域沙箱。可以这样去理解，当你在代码加载完成后，不得不执行一些设置的工作，比例创建对象啊等等，但是这些代码需药一些临时的变量，初始化过程结束后，就再也不会用到，但是如果这些变量作为全局变量可以不是一个好事，所以我们需要IIFE去将代码包裹在它的局部作用域内，不会让任何变量污染全局
+
 
 **用闭包来实现单例模式**
 ```javascript
@@ -103,10 +106,10 @@ Singleton.getInstance = (function() {
 ```
 1. function(name){} 这个匿名函数被包裹在立即执行函数的内部就形成闭包！instance变量会被匿名函数所访问，它会一直存在。因为闭包的存在，第一次实例化的对象**赵小刀**赋值给instance会一直存在作用域中，无论你在怎么去实例，她都是**赵小刀**。<br>
 2. 这里还有一个注意的点就是**return function(name){}** ：就相当于一个西瓜，你不去用刀切开它，你永远不知道这个瓜甜不甜（高手除外）；所以return相当于这把刀，将闭包中的内部函数‘切开’，让它重见天日。Singleton.getInstance得到就是this.instance!!!
-<br>
 
 ## 结语
-**JavaScript中的闭包、this、设计模式、数据结构等等这些对于我们初学者来说，都是需要花费很多时间去学习，去深入理解。虽然开始学的很艰难，但是当你打开这一扇门后，你会发现它们也不过如此——致那些正在努力学习的亲们💗！**<br>
+
+**JavaScript中的闭包、this、设计模式、数据结构等等这些对于我们初学者来说，都是需要花费很多时间去学习，去深入理解。虽然开始学的很艰难，但是当你打开这一扇门后，你会发现它们也不过如此:smirk:——致那些正在努力学习的亲们💗！**<br>
 
 最后附上女神萌图！<br>
 ![](http://a2.qpic.cn/psb?/V11KKToj0xeyCw/CjEK8f7IRUjf8uDf*9wa4mTgnEIlkrS4DXRAa8bJLNQ!/c/dGwBAAAAAAAA&bo=owFWAQAAAAACB9Y!&rf=viewer_4)
