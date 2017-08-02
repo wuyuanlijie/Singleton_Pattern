@@ -1,10 +1,9 @@
-# JavaScript——当单例模式遇上了赵小刀
-
+# JavaScript——当单例模式遇上赵小刀
 
 ## 前言
-作为一个单身很久的boy，接触JavaScript的时候，就深深被单例模式所吸引，我只想要个女朋友，不要多，只要一个...如果可能的话，我希望是她:heart_eyes:，哈哈哈！
+作为一个单身很久的boy，正在努力学习JavaScript，然后就深深被单例模式所吸引...我只想要个女朋友，one is enough...如果可能的话，我希望是她:heart_eyes:，哈哈哈！
 
-![](http://wx4.sinaimg.cn/bmiddle/006z0VkIly1fi4oe4215qj30ku0kumze.jpg)
+![](https://github.com/wuyuanlijie/Singleton_Pattern/blob/master/single3.gif)
 
 ## 介绍
  **单例模式** 也称为单子模式，更多的也叫做单体模式，但我更喜欢称它为单例模式。所谓单例，就是只有一个实例的存在；而单例模式，就是保证一个类只有一个实例，并且提供了一个访问它的全局访问点。很多时候我们只要拥有一个去全局对象，才有利于我们去协调整个系统。比如：一个网站，很明显弹出一个登录浮窗，不可能同时存再两个登录窗口的情况，这个时候就需要运用到这个模式。 <br>
@@ -75,7 +74,7 @@ class Singleton {
   }
 }
 ```
-class中用static声明的是静态属性，可想而知，它是一个内部属性。其实原理和es5一样，然而写法截然不同！class可以直接用来构造一个类，我不知道js是否在向java看齐，但是这种写法可以让我们更好的去理解js，更加容易去理解面向对象。<br><br>
+class中用static声明的是静态属性，可想而知，它是一个内部属性。其实原理和es5一样，然而写法截然不同！class可以直接用来构造一个类，我不知道js是否在向java看齐，但是这种写法可以让我们更好的去理解js，更加容易去理解面向对象。<br>
 
 ### 4. 用闭包来实现单例模式
 实现单例模式的方法有很多种，闭包也是其中一种! 首先我们先了解下它们：<br>
@@ -109,11 +108,11 @@ Singleton.getInstance = (function() {
 2. 这里还有一个注意的点就是**return function(name){}** ：就相当于一个西瓜，你不去用刀切开它，你永远不知道这个瓜甜不甜（高手除外）；所以return相当于这把刀，将闭包中的内部函数‘切开’，让它重见天日。Singleton.getInstance得到就是this.instance!!!
 
 ## 结语
-
-**JavaScript中的闭包、this、设计模式、数据结构等等这些对于我们初学者来说，都是需要花费很多时间去学习，去深入理解。虽然开始学的很艰难，但是当你打开这一扇门后，你会发现它们也不过如此:smirk:——致那些正在努力学习的亲们💗！**<br>
+**单例模式的巧妙远远不止这些，我写的远远不够！还需要更深入的去学习！<br><br>
+JavaScript中的闭包、this、设计模式、数据结构等等这些对于我们初学者来说，都是需要花费很多时间去学习，去深入理解。虽然开始学的很艰难，但是当你打开这一扇门后，你会发现它们也不过如此:smirk:——致那些正在努力学习的亲们💗！**<br>
 
 最后附上女神萌图！<br>
-![](http://a2.qpic.cn/psb?/V11KKToj0xeyCw/CjEK8f7IRUjf8uDf*9wa4mTgnEIlkrS4DXRAa8bJLNQ!/c/dGwBAAAAAAAA&bo=owFWAQAAAAACB9Y!&rf=viewer_4)
+![](https://github.com/wuyuanlijie/Singleton_Pattern/blob/master/single2.gif)
 
 ## GitHub
 https://github.com/wuyuanlijie/Singleton_Pattern
