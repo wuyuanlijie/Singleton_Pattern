@@ -103,6 +103,7 @@ Singleton.getInstance = (function() {
     return this.instance; 
   }
 })();
+
 ```
 1. function(name){} 这个匿名函数被包裹在立即执行函数的内部就形成闭包！instance变量会被匿名函数所访问，它会一直存在。因为闭包的存在，第一次实例化的对象**赵小刀**赋值给instance会一直存在作用域中，无论你在怎么去实例，她都是**赵小刀**。<br>
 2. 这里还有一个注意的点就是**return function(name){}** ：就相当于一个西瓜，你不去用刀切开它，你永远不知道这个瓜甜不甜（高手除外）；所以return相当于这把刀，将闭包中的内部函数‘切开’，让它重见天日。Singleton.getInstance得到就是this.instance!!!
