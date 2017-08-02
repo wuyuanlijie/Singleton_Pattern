@@ -4,7 +4,7 @@
 ## 前言
 作为一个单身很久的boy，接触JavaScript的时候，就深深被单例模式所吸引，我只想要个女朋友，不要多，只要一个...如果可能的话，我希望是她，哈哈哈！
 
-![](http://a3.qpic.cn/psb?/V11KKToj0xeyCw/5dC2isC3fnR1fcLmTVvW8Ab4SiS8Wg3XyBqhyzKm5iA!/b/dD0BAAAAAAAA&bo=gAJ5AwAAAAARB8g!&rf=viewer_4=200*100)
+![](http://a3.qpic.cn/psb?/V11KKToj0xeyCw/UyOctRSZuhhS0B5xyjhgliC0mPgnbLdD7hUx7XJfS.o!/c/dD0BAAAAAAAA&bo=ywFlAQAAAAACB40!&rf=viewer_4)
 
 ## 介绍
  **单例模式** 也称为单子模式，更多的也叫做单体模式，但我更喜欢称它为单例模式。所谓单例，就是只有一个实例的存在；而单例模式，就是保证一个类只有一个实例，并且提供了一个访问它的全局访问点。很多时候我们只要拥有一个去全局对象，才有利于我们去协调整个系统。比如：一个网站，很明显弹出一个登录浮窗，不可能同时存再两个登录窗口的情况，这个时候就需要运用到这个模式。 <br>
@@ -95,6 +95,8 @@ Singleton.getInstance = (function() { //立即执行函数 嵌套函数 形成�
 ## 结语
 
 **JavaScript中的闭包、this、设计模式、数据结构等等这些对于我们初学者来说，都是需要花费很多时间去学习，去深入理解。虽然开始学的很艰难，但是当你打开这一扇门后，你会发现它们也不过如此——致那些正在努力学习的亲们💗！**
+附上女神萌图！
+![](http://a2.qpic.cn/psb?/V11KKToj0xeyCw/CjEK8f7IRUjf8uDf*9wa4mTgnEIlkrS4DXRAa8bJLNQ!/c/dGwBAAAAAAAA&bo=owFWAQAAAAACB9Y!&rf=viewer_4)
 
 ## GitHub
 https://github.com/wuyuanlijie/Singleton_Pattern
