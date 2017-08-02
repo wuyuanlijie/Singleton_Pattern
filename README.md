@@ -3,7 +3,8 @@
 
 ## 前言
 作为一个单身很久的boy，接触JavaScript的时候，就深深被单例模式所吸引，我只想要个女朋友，不要多，只要一个...如果可能的话，我希望是她，哈哈哈！
-![](http://a3.qpic.cn/psb?/V11KKToj0xeyCw/5dC2isC3fnR1fcLmTVvW8Ab4SiS8Wg3XyBqhyzKm5iA!/b/dD0BAAAAAAAA&bo=gAJ5AwAAAAARB8g!&rf=viewer_4)
+
+![](http://a3.qpic.cn/psb?/V11KKToj0xeyCw/5dC2isC3fnR1fcLmTVvW8Ab4SiS8Wg3XyBqhyzKm5iA!/b/dD0BAAAAAAAA&bo=gAJ5AwAAAAARB8g!&rf=viewer_4=200*100)
 
 ## 介绍
  **单例模式** 也称为单子模式，更多的也叫做单体模式，但我更喜欢称它为单例模式。所谓单例，就是只有一个实例的存在；而单例模式，就是保证一个类只有一个实例，并且提供了一个访问它的全局访问点。很多时候我们只要拥有一个去全局对象，才有利于我们去协调整个系统。比如：一个网站，很明显弹出一个登录浮窗，不可能同时存再两个登录窗口的情况，这个时候就需要运用到这个模式。 <br>
